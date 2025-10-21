@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">LoginFirebase</string>
+    <string name="title_activity_login">Login</string>
+    <string name="title_activity_registro">Registro</string>
+    <string name="title_activity_datos">Datos</string>
+    <string name="title_activity_inicio">Inicio</string>
+    <string name="title_activity_api">API</string>
+</resources>
