@@ -183,7 +183,7 @@ fun Greeting3(name: String, modifier: Modifier = Modifier) {
                 mensajeError = "Registro correcto"
 
                 val activity = contexto1 as Registro  // convertimos el contexto a la funcion Registro
-                activity.registro(
+                activity.registro(      //llamamos a la funcion registro y le pasamos los parametros
                     campoEmail.text.trim(),
                     campoContrasena.text.trim()
                 )

@@ -88,7 +88,7 @@ class Login : ComponentActivity() {
 @Composable
 fun Greeting(name: String, modifier: Modifier = Modifier) {
 
-    var contexto1 = LocalContext.current
+    var contexto1 = LocalContext.current //damos contexto
 
     val imagen1 = R.drawable.logoluisvives
 
@@ -156,8 +156,8 @@ fun Greeting(name: String, modifier: Modifier = Modifier) {
 
         Button(
             onClick = {
-                val activity = contexto1 as Login  // convertimos el contexto a la Activity Login
-                activity.login(
+                val activity = contexto1 as Login  // convertimos el contexto (es un tipo generico) a la Activity Login ya que el
+                contexto1.login(                    //metodo login no existe en la clase Context sino en la de Login.kt
                     campoEmail.text.trim(),
                     campoContrasena.text.trim()
                 )

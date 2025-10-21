@@ -103,7 +103,7 @@ fun Greeting2(name: String, modifier: Modifier = Modifier) {
 
         Button(
             onClick = {
-                contexto1.startActivity(Intent(contexto1, Login::class.java))
+                contexto1.startActivity(Intent(contexto1, Login::class.java))//al pulsar cambia a la activity Login
             },
             colors = ButtonDefaults.buttonColors(
                 containerColor = Color(red = 181, green = 36, blue = 106),
@@ -133,7 +133,7 @@ fun Greeting2(name: String, modifier: Modifier = Modifier) {
             color = Color.Blue,
             textDecoration = TextDecoration.Underline,
             modifier = Modifier.clickable() {
-                val intent1 = Intent(contexto1, Registro::class.java)
+                val intent1 = Intent(contexto1, Registro::class.java) //al clicar manda a la activity Registro
                 contexto1.startActivity(intent1)
             }
         )

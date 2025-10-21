@@ -137,6 +137,7 @@ fun Greeting5(name: String, modifier: Modifier = Modifier) {
 
         Button(
             onClick = {
+                //añadimos los campos del SharedPrefs a los campos del formulario
                 prefs.edit().apply {
                     putString("email", campoEmail.text.trim())
                     putString("contrasena", campoContrasena.text)
@@ -144,7 +145,7 @@ fun Greeting5(name: String, modifier: Modifier = Modifier) {
                 }
                 mensajeError = "Cambios guardados correctamente"
 
-                val intent1 = Intent(contexto1, API::class.java)
+                val intent1 = Intent(contexto1, API::class.java) //pasamos a la activity API
                 contexto1.startActivity(intent1)
             },
             colors = ButtonDefaults.buttonColors(

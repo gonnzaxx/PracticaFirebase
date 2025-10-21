@@ -39,7 +39,7 @@ class API : ComponentActivity() {
         super.onCreate(savedInstanceState)
 
         retrofit = retrofit2.Retrofit.Builder()
-            .baseUrl("https://swapi.dev/api/")
+            .baseUrl("https://swapi.dev/api/") //url de la API de star wars
             .addConverterFactory(GsonConverterFactory.create())
             .build()
 
